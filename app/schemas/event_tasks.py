@@ -28,8 +28,8 @@ class EventTaskResponse(BaseModel):
     assignee_id: int | None
     title: str | None
     description: str | None
-    status: EventTaskStatus
-    priority: EventTaskPriority
+    status: str
+    priority: str
     due_date: datetime | None
     created_at: datetime | None
 
