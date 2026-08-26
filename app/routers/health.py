@@ -3,7 +3,7 @@ from app.db.database import engine
 
 router = APIRouter(prefix="/health", tags=["health"])
 
-@router.get("/health")
+@router.get("/")
 def health_check():
     if engine.connect():
         return {"status": "healthy"}

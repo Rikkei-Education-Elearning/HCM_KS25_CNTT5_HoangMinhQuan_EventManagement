@@ -1,0 +1,152 @@
+[
+  {
+    "group": "11. EVENT TASK 500 ERRORS",
+    "case": "Create Task",
+    "input": "POST /event-tasks",
+    "expected": "201 Created",
+    "actual": "module 'datetime' has no attribute 'now'",
+    "status": 500,
+    "result": "FAIL",
+    "notes": ""
+  },
+  {
+    "group": "3. GET EVENT BY ID",
+    "case": "Owner",
+    "input": "GET /events/A",
+    "expected": "200 OK",
+    "actual": "{\"statusCode\":200,\"message\":\"Event found\",\"data\":{\"id\":24,\"name\":\"Event A\",\"description\":\"Desc A\",\"owner_id\":33,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T01:37:04.487117",
+    "status": 200,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "3. GET EVENT BY ID",
+    "case": "Staff member",
+    "input": "GET /events/A",
+    "expected": "200 OK",
+    "actual": "{\"statusCode\":200,\"message\":\"Event found\",\"data\":{\"id\":24,\"name\":\"Event A\",\"description\":\"Desc A\",\"owner_id\":33,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T01:37:04.495585",
+    "status": 200,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "3. GET EVENT BY ID",
+    "case": "Unrelated auth user",
+    "input": "GET /events/A",
+    "expected": "403 Forbidden",
+    "actual": "{\"statusCode\":401,\"message\":\"User not authorized to access this event\",\"data\":null,\"error\":\"User not authorized to access this event\",\"timestamp\":\"2026-08-26T01:37:04.504368\",\"path\":\"/events/24\"}",
+    "status": 401,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "3. GET EVENT BY ID",
+    "case": "Unauthenticated",
+    "input": "GET /events/A",
+    "expected": "401 Unauthorized",
+    "actual": "{\"detail\":\"Not authenticated\"}",
+    "status": 401,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "3. GET EVENT BY ID",
+    "case": "Nonexistent event",
+    "input": "GET /events/99999",
+    "expected": "404 Not Found",
+    "actual": "'NoneType' object has no attribute 'owner_id'",
+    "status": 500,
+    "result": "FAIL",
+    "notes": ""
+  },
+  {
+    "group": "4. GET EVENT TASK",
+    "case": "Task owner",
+    "input": "GET Task A",
+    "expected": "200 OK",
+    "actual": "{\"statusCode\":401,\"message\":\"User not authorized to access this event task\",\"data\":null,\"error\":\"User not authorized to access this event task\",\"timestamp\":\"2026-08-26T01:37:04.533119\",\"path\":\"/event-",
+    "status": 401,
+    "result": "FAIL",
+    "notes": ""
+  },
+  {
+    "group": "4. GET EVENT TASK",
+    "case": "Cross-event IDOR",
+    "input": "Staff of A gets Task B",
+    "expected": "403 Forbidden",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task found\",\"data\":{\"id\":13,\"event_id\":25,\"assignee_id\":34,\"title\":\"Task B\",\"description\":\"B\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:00:00\"",
+    "status": 200,
+    "result": "FAIL",
+    "notes": ""
+  },
+  {
+    "group": "4. GET EVENT TASK",
+    "case": "Nonexistent task",
+    "input": "GET Task 99999",
+    "expected": "404",
+    "actual": "{\"statusCode\":404,\"message\":\"Event Task not found\",\"data\":null,\"error\":\"Event task not found\",\"timestamp\":\"2026-08-26T01:37:04.550612\",\"path\":\"/event-tasks/99999\"}",
+    "status": 404,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "5. PATCH EVENT TASK",
+    "case": "Cross-event IDOR",
+    "input": "Staff of A patches Task B",
+    "expected": "403 Forbidden",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"status\"],\"msg\":\"Input should be 'pending', 'in_progress' or 'completed'\",\"input\":\"DONE\",\"ctx\":{\"expected\":\"'pending', 'in_progress' or 'completed'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "5. PATCH EVENT TASK",
+    "case": "Update only status",
+    "input": "PATCH Task A status",
+    "expected": "200 OK",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"status\"],\"msg\":\"Input should be 'pending', 'in_progress' or 'completed'\",\"input\":\"DONE\",\"ctx\":{\"expected\":\"'pending', 'in_progress' or 'completed'\"}}]}",
+    "status": 422,
+    "result": "FAIL",
+    "notes": ""
+  },
+  {
+    "group": "6. STATUS VALIDATION",
+    "case": "Invalid status",
+    "input": "PATCH Task A INVALID status",
+    "expected": "422 Unprocessable Entity",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"status\"],\"msg\":\"Input should be 'pending', 'in_progress' or 'completed'\",\"input\":\"INVALID\",\"ctx\":{\"expected\":\"'pending', 'in_progress' or 'completed'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "7. PRIORITY VALIDATION",
+    "case": "Invalid priority",
+    "input": "PATCH Task A URGENT priority",
+    "expected": "422 Unprocessable Entity",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"priority\"],\"msg\":\"Input should be 'low', 'medium' or 'high'\",\"input\":\"URGENT\",\"ctx\":{\"expected\":\"'low', 'medium' or 'high'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "notes": ""
+  },
+  {
+    "group": "8. AUTHORIZATION SEMANTICS",
+    "case": "Unauth vs Forbidden",
+    "input": "Unauth=401, Forbid=403",
+    "expected": "401 and 403",
+    "actual": "r1=401, r2=401",
+    "status": 0,
+    "result": "FAIL",
+    "notes": ""
+  },
+  {
+    "group": "9. PAGINATION",
+    "case": "Invalid limits",
+    "input": "page=-1 limit=0",
+    "expected": "422",
+    "actual": "{\"statusCode\":200,\"message\":\"Members retrieved successfully\",\"data\":[],\"error\":null,\"timestamp\":\"2026-08-26T01:37:04.595214\",\"path\":\"/events/24/members\"}",
+    "status": 200,
+    "result": "FAIL",
+    "notes": ""
+  }
+]

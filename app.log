@@ -1,0 +1,634 @@
+2026-08-25 18:02:29,720 - app.core.logging - INFO - GET / -> 200 (0.0292s)
+2026-08-25 18:03:29,548 - app.core.logging - INFO - POST /auth/login -> 200 (0.2679s)
+2026-08-25 18:04:16,419 - app.core.logging - INFO - Event created: Toi thich dan ong
+2026-08-25 18:04:16,422 - app.core.logging - INFO - POST /events -> 201 (0.0214s)
+2026-08-25 18:13:25,099 - app.core.logging - INFO - POST /event-tasks -> 404 (0.0161s)
+2026-08-25 18:13:41,967 - app.core.logging - INFO - POST /event-tasks -> 404 (0.0188s)
+2026-08-25 18:15:06,984 - app.core.logging - INFO - POST /event-tasks -> 404 (0.0185s)
+2026-08-25 18:17:57,807 - app.core.logging - INFO - POST /event-tasks -> 404 (0.0291s)
+2026-08-25 18:18:50,941 - app.core.logging - INFO - GET /docs -> 200 (0.0004s)
+2026-08-25 18:18:51,218 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0340s)
+2026-08-25 18:19:31,226 - app.core.logging - INFO - POST /events/{event_id}/event-tasks -> 401 (0.0388s)
+2026-08-25 18:20:18,949 - app.core.logging - INFO - GET /users/me -> 200 (0.0321s)
+2026-08-25 18:20:37,455 - app.core.logging - INFO - GET /events/5/members -> 401 (0.0218s)
+2026-08-25 18:20:45,886 - app.core.logging - INFO - GET /events/2/members -> 200 (0.0180s)
+2026-08-25 18:34:21,947 - app.core.logging - INFO - POST /auth/login -> 200 (0.2529s)
+2026-08-25 18:38:07,127 - app.core.logging - INFO - GET /events/2/members -> 200 (0.0175s)
+2026-08-25 18:49:36,506 - app.core.logging - INFO - POST /events/{event_id}/event-tasks -> 201 (0.0924s)
+2026-08-25 18:49:54,556 - app.core.logging - INFO - POST /events/{event_id}/event-tasks -> 201 (0.0745s)
+2026-08-25 18:55:31,589 - app.core.logging - INFO - GET /docs -> 200 (0.0003s)
+2026-08-25 18:55:31,849 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0562s)
+2026-08-25 19:01:33,801 - app.core.logging - INFO - GET /docs -> 200 (0.0005s)
+2026-08-25 19:01:34,038 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0571s)
+2026-08-25 19:08:29,604 - app.core.logging - INFO - POST /auth/login -> 200 (0.2656s)
+2026-08-25 19:08:51,789 - app.core.logging - INFO - GET /events/2/event-tasks -> 401 (0.0044s)
+2026-08-25 19:09:00,000 - app.core.logging - INFO - GET /events/1/event-tasks -> 401 (0.0029s)
+2026-08-25 19:12:08,454 - app.core.logging - INFO - GET /events/1/event-tasks -> 401 (0.0230s)
+2026-08-25 19:14:43,028 - app.core.logging - INFO - GET /events/1/event-tasks -> 401 (0.0298s)
+2026-08-25 19:15:00,412 - app.core.logging - INFO - GET /events/1/members -> 401 (0.0033s)
+2026-08-25 19:15:56,469 - app.core.logging - INFO - POST /auth/login -> 200 (0.2551s)
+2026-08-25 19:16:12,685 - app.core.logging - INFO - GET /events/1/members -> 200 (0.0208s)
+2026-08-25 19:21:07,523 - app.core.logging - INFO - GET /events/1/event-tasks -> 200 (0.0468s)
+2026-08-25 19:26:24,797 - app.core.logging - INFO - GET /docs -> 200 (0.0004s)
+2026-08-25 19:26:25,033 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0561s)
+2026-08-25 19:27:34,381 - app.core.logging - INFO - GET /event-tasks/2 -> 200 (0.0632s)
+2026-08-25 19:27:51,038 - app.core.logging - INFO - GET /event-tasks/2 -> 200 (0.0450s)
+2026-08-25 19:31:02,656 - app.core.logging - INFO - GET /event-tasks/2 -> 200 (0.0674s)
+2026-08-25 19:31:55,806 - app.core.logging - INFO - GET /event-tasks/2 -> 200 (0.0564s)
+2026-08-25 19:35:12,714 - app.core.logging - INFO - GET /docs -> 200 (0.0004s)
+2026-08-25 19:35:13,003 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0615s)
+2026-08-25 19:35:22,121 - app.core.logging - INFO - GET /event-tasks/1 -> 401 (0.0025s)
+2026-08-25 19:35:33,687 - app.core.logging - INFO - GET /event-tasks/1 -> 200 (0.0355s)
+2026-08-25 19:36:47,538 - app.core.logging - INFO - GET /event-tasks/1 -> 200 (0.0459s)
+2026-08-25 19:54:14,162 - app.core.logging - INFO - POST /auth/login -> 200 (0.2712s)
+2026-08-25 19:54:34,017 - app.core.logging - INFO - GET /users/me -> 200 (0.0133s)
+2026-08-25 19:55:06,977 - app.core.logging - INFO - Event patched: 12
+2026-08-25 19:55:06,992 - app.core.logging - INFO - PATCH /events/12 -> 200 (0.0334s)
+2026-08-25 19:56:16,100 - app.core.logging - INFO - Event patched: 12
+2026-08-25 19:56:16,118 - app.core.logging - INFO - PATCH /events/12 -> 200 (0.0623s)
+2026-08-25 19:58:16,574 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:01:30,132 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:03:17,364 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:05:29,057 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:07:30,218 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:08:48,949 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:08:48,958 - app.core.logging - INFO - PATCH /events/12 -> 200 (0.0584s)
+2026-08-25 20:13:14,607 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:13:14,620 - app.core.logging - INFO - PATCH /events/12 -> 200 (0.0549s)
+2026-08-25 20:13:50,516 - app.core.logging - INFO - Event patched: 12
+2026-08-25 20:13:50,524 - app.core.logging - INFO - PATCH /events/12 -> 200 (0.0140s)
+2026-08-25 20:18:52,860 - app.core.logging - INFO - GET /docs -> 200 (0.0003s)
+2026-08-25 20:18:53,097 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0587s)
+2026-08-25 20:20:12,641 - app.core.logging - INFO - GET /docs -> 200 (0.0005s)
+2026-08-25 20:20:12,986 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0613s)
+2026-08-25 20:20:37,705 - app.core.logging - INFO - POST /auth/login -> 200 (0.2618s)
+2026-08-25 20:21:32,525 - app.core.logging - INFO - PATCH /event-tasks/9 -> 422 (0.0094s)
+2026-08-25 20:22:38,938 - app.core.logging - INFO - PATCH /event-tasks/9 -> 422 (0.0452s)
+2026-08-25 20:23:43,549 - app.core.logging - INFO - PATCH /events/5 -> 422 (0.0082s)
+2026-08-25 20:26:15,870 - app.core.logging - INFO - PATCH /events/5 -> 422 (0.0549s)
+2026-08-25 20:27:39,123 - app.core.logging - INFO - Event patched: 5
+2026-08-25 20:27:39,128 - app.core.logging - INFO - PATCH /events/5 -> 401 (0.0508s)
+2026-08-25 20:27:59,966 - app.core.logging - INFO - POST /auth/login -> 200 (0.2463s)
+2026-08-25 20:28:15,088 - app.core.logging - INFO - Event patched: 5
+2026-08-25 20:28:15,103 - app.core.logging - INFO - PATCH /events/5 -> 200 (0.0187s)
+2026-08-25 20:28:31,140 - app.core.logging - INFO - PATCH /event-tasks/9 -> 401 (0.0281s)
+2026-08-25 20:32:20,746 - app.core.logging - INFO - PATCH /event-tasks/9 -> 401 (0.0313s)
+2026-08-25 20:32:39,047 - app.core.logging - INFO - POST /auth/login -> 200 (0.2628s)
+2026-08-25 20:36:12,110 - app.core.logging - INFO - GET /docs -> 200 (0.0013s)
+2026-08-25 20:36:12,355 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0410s)
+2026-08-25 20:36:45,970 - app.core.logging - INFO - PATCH /event-tasks/9 -> 422 (0.0011s)
+2026-08-25 20:42:04,293 - app.core.logging - INFO - PATCH /event-tasks/9 -> 200 (0.0623s)
+2026-08-25 20:46:06,827 - app.core.logging - INFO - PATCH /event-tasks/9 -> 200 (0.0887s)
+2026-08-25 20:50:45,481 - app.core.logging - INFO - GET /docs -> 200 (0.0004s)
+2026-08-25 20:50:45,721 - app.core.logging - INFO - GET /openapi.json -> 200 (0.0577s)
+2026-08-25 20:51:15,462 - app.core.logging - INFO - POST /auth/login -> 200 (0.2568s)
+2026-08-25 20:51:39,731 - app.core.logging - INFO - DELETE /event-tasks/10 -> 200 (0.0159s)
+2026-08-25 20:52:19,985 - app.core.logging - INFO - DELETE /event-tasks/8 -> 401 (0.0119s)
+2026-08-26 00:31:03,319 - app.core.logging - INFO - GET / -> 200 (0.0368s)
+2026-08-26 00:31:03,414 - app.core.logging - INFO - GET /favicon.ico -> 404 (0.0006s)
+2026-08-26 00:31:04,673 - app.core.logging - INFO - GET /docs/ -> 307 (0.0008s)
+2026-08-26 00:31:04,678 - app.core.logging - INFO - GET /docs/ -> 307 (0.0003s)
+2026-08-26 00:31:04,683 - app.core.logging - INFO - GET /docs/ -> 307 (0.0004s)
+2026-08-26 00:31:04,689 - app.core.logging - INFO - GET /docs/ -> 307 (0.0006s)
+2026-08-26 00:31:04,694 - app.core.logging - INFO - GET /docs/ -> 307 (0.0008s)
+2026-08-26 00:31:04,699 - app.core.logging - INFO - GET /docs/ -> 307 (0.0005s)
+2026-08-26 00:31:04,705 - app.core.logging - INFO - GET /docs/ -> 307 (0.0005s)
+2026-08-26 00:31:04,710 - app.core.logging - INFO - GET /docs/ -> 307 (0.0004s)
+2026-08-26 00:31:04,715 - app.core.logging - INFO - GET /docs/ -> 307 (0.0005s)
+2026-08-26 00:31:04,719 - app.core.logging - INFO - GET /docs/ -> 307 (0.0003s)
+2026-08-26 00:31:04,722 - app.core.logging - INFO - GET /docs/ -> 307 (0.0004s)
+2026-08-26 00:31:04,726 - app.core.logging - INFO - GET /docs/ -> 307 (0.0003s)
+2026-08-26 00:31:04,730 - app.core.logging - INFO - GET /docs/ -> 307 (0.0005s)
+2026-08-26 00:31:04,734 - app.core.logging - INFO - GET /docs/ -> 307 (0.0004s)
+2026-08-26 00:31:04,739 - app.core.logging - INFO - GET /docs/ -> 307 (0.0006s)
+2026-08-26 00:31:04,744 - app.core.logging - INFO - GET /docs/ -> 307 (0.0008s)
+2026-08-26 00:31:04,754 - app.core.logging - INFO - GET /docs/ -> 307 (0.0007s)
+2026-08-26 00:31:04,759 - app.core.logging - INFO - GET /docs/ -> 307 (0.0004s)
+2026-08-26 00:31:04,766 - app.core.logging - INFO - GET /docs/ -> 307 (0.0007s)
+2026-08-26 00:31:04,771 - app.core.logging - INFO - GET /docs/ -> 307 (0.0008s)
+2026-08-26 00:32:15,475 - app.core.logging - INFO - POST /auth/register -> 400 (0.0084s)
+2026-08-26 00:32:28,627 - app.core.logging - INFO - POST /auth/register -> 400 (0.0041s)
+2026-08-26 00:32:32,967 - app.core.logging - INFO - POST /auth/register -> 422 (0.0028s)
+2026-08-26 00:32:35,267 - app.core.logging - INFO - POST /auth/login -> 200 (0.2583s)
+2026-08-26 00:33:24,969 - app.core.logging - INFO - POST /auth/login -> 400 (0.2428s)
+2026-08-26 00:33:27,025 - app.core.logging - INFO - POST /auth/login -> 400 (0.0022s)
+2026-08-26 00:33:29,082 - app.core.logging - INFO - POST /auth/login -> 400 (0.0087s)
+2026-08-26 00:33:31,135 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0028s)
+2026-08-26 00:33:33,171 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0018s)
+2026-08-26 00:33:46,953 - app.core.logging - INFO - GET /users/me -> 200 (0.0112s)
+2026-08-26 00:33:49,011 - app.core.logging - INFO - GET /users/me -> 401 (0.0005s)
+2026-08-26 00:33:51,062 - app.core.logging - INFO - GET /users/me -> 401 (0.0014s)
+2026-08-26 00:33:53,120 - app.core.logging - INFO - GET /users/ -> 403 (0.0059s)
+2026-08-26 00:34:01,762 - app.core.logging - INFO - Event created: Test Event
+2026-08-26 00:34:01,763 - app.core.logging - INFO - POST /events -> 201 (0.0340s)
+2026-08-26 00:35:31,159 - app.core.logging - INFO - GET /events -> 200 (0.0144s)
+2026-08-26 00:35:33,214 - app.core.logging - INFO - GET /events/13 -> 401 (0.0082s)
+2026-08-26 00:35:35,263 - app.core.logging - INFO - GET /events/99999 -> 401 (0.0045s)
+2026-08-26 00:35:37,316 - app.core.logging - INFO - Event updated: 13
+2026-08-26 00:35:37,317 - app.core.logging - INFO - PUT /events/13 -> 200 (0.0169s)
+2026-08-26 00:35:39,357 - app.core.logging - INFO - Event patched: 13
+2026-08-26 00:35:39,367 - app.core.logging - INFO - PATCH /events/13 -> 200 (0.0161s)
+2026-08-26 00:36:34,972 - app.core.logging - INFO - Event deleted: 13
+2026-08-26 00:36:34,973 - app.core.logging - INFO - DELETE /events/13 -> 204 (0.0425s)
+2026-08-26 00:36:37,024 - app.core.logging - INFO - DELETE /events/99999 -> 404 (0.0056s)
+2026-08-26 00:37:49,095 - app.core.logging - INFO - Event created: Member Test Event
+2026-08-26 00:37:49,096 - app.core.logging - INFO - POST /events -> 201 (0.0122s)
+2026-08-26 00:37:51,156 - app.core.logging - INFO - POST /events/14/members -> 404 (0.0113s)
+2026-08-26 00:37:53,219 - app.core.logging - INFO - GET /events/14/members -> 200 (0.0088s)
+2026-08-26 00:39:42,520 - app.core.logging - INFO - GET /event-tasks/99999 -> 404 (0.0091s)
+2026-08-26 00:39:44,565 - app.core.logging - INFO - PATCH /event-tasks/99999 -> 404 (0.0062s)
+2026-08-26 00:39:46,612 - app.core.logging - INFO - DELETE /event-tasks/99999 -> 404 (0.0093s)
+2026-08-26 00:40:06,968 - app.core.logging - INFO - GET /users/ -> 403 (0.0051s)
+2026-08-26 00:40:09,015 - app.core.logging - INFO - GET /users/ -> 403 (0.0078s)
+2026-08-26 00:40:11,070 - app.core.logging - INFO - GET /users/ -> 403 (0.0069s)
+2026-08-26 00:40:13,134 - app.core.logging - INFO - GET /users/ -> 403 (0.0059s)
+2026-08-26 00:40:26,297 - app.core.logging - INFO - POST /events -> 422 (0.0047s)
+2026-08-26 00:40:28,346 - app.core.logging - INFO - POST /events -> 422 (0.0064s)
+2026-08-26 00:40:30,407 - app.core.logging - INFO - POST /events -> 401 (0.0009s)
+2026-08-26 00:40:39,198 - app.core.logging - INFO - POST /auth/login -> 400 (0.2511s)
+2026-08-26 00:40:41,494 - app.core.logging - INFO - POST /auth/login -> 400 (0.2480s)
+2026-08-26 00:40:43,772 - app.core.logging - INFO - POST /auth/login -> 400 (0.2336s)
+2026-08-26 00:40:46,056 - app.core.logging - INFO - POST /auth/login -> 429 (0.2336s)
+2026-08-26 00:40:48,097 - app.core.logging - INFO - POST /auth/login -> 429 (0.0030s)
+2026-08-26 00:40:50,149 - app.core.logging - INFO - POST /auth/login -> 429 (0.0028s)
+2026-08-26 00:40:52,201 - app.core.logging - INFO - GET /users/me -> 401 (0.0011s)
+2026-08-26 01:07:22,963 - app.core.logging - INFO - POST /auth/login -> 200 (0.2349s)
+2026-08-26 01:07:25,028 - app.core.logging - INFO - Event created: Test Event for Bug Fix
+2026-08-26 01:07:25,030 - app.core.logging - INFO - POST /events -> 201 (0.0303s)
+2026-08-26 01:07:27,090 - app.core.logging - INFO - GET /events/15 -> 200 (0.0101s)
+2026-08-26 01:07:34,902 - app.core.logging - INFO - POST /auth/login -> 200 (0.2288s)
+2026-08-26 01:07:36,942 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0022s)
+2026-08-26 01:07:38,996 - app.core.logging - INFO - Member added to event: 15
+2026-08-26 01:07:38,997 - app.core.logging - INFO - POST /events/15/members -> 201 (0.0147s)
+2026-08-26 01:07:51,562 - app.core.logging - INFO - POST /auth/login -> 400 (0.2308s)
+2026-08-26 01:07:53,833 - app.core.logging - INFO - POST /auth/login -> 400 (0.2308s)
+2026-08-26 01:07:56,109 - app.core.logging - INFO - POST /auth/login -> 400 (0.2301s)
+2026-08-26 01:07:58,379 - app.core.logging - INFO - POST /auth/login -> 400 (0.2288s)
+2026-08-26 01:08:00,648 - app.core.logging - INFO - POST /auth/login -> 429 (0.2324s)
+2026-08-26 01:08:02,695 - app.core.logging - INFO - POST /auth/login -> 429 (0.0024s)
+2026-08-26 01:08:04,735 - app.core.logging - INFO - GET /users/me -> 401 (0.0022s)
+2026-08-26 01:09:02,795 - app.core.logging - INFO - POST /auth/register -> 201 (0.2572s)
+2026-08-26 01:09:05,071 - app.core.logging - INFO - POST /auth/login -> 200 (0.2330s)
+2026-08-26 01:09:07,108 - app.core.logging - INFO - POST /auth/refresh -> 200 (0.0039s)
+2026-08-26 01:09:09,148 - app.core.logging - INFO - GET /users/me -> 401 (0.0058s)
+2026-08-26 01:09:16,187 - app.core.logging - INFO - POST /auth/login -> 200 (0.2339s)
+2026-08-26 01:10:10,986 - app.core.logging - INFO - POST /auth/login -> 200 (0.2642s)
+2026-08-26 01:10:13,062 - app.core.logging - INFO - GET /events/15/event-tasks -> 200 (0.0353s)
+2026-08-26 01:10:45,568 - app.core.logging - INFO - POST /auth/login -> 200 (0.2609s)
+2026-08-26 01:12:11,225 - app.core.logging - INFO - POST /auth/login -> 200 (0.2353s)
+2026-08-26 01:31:19,222 - app.core.logging - INFO - POST /auth/register -> 201 (0.2674s)
+2026-08-26 01:31:19,226 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:31:19,461 - app.core.logging - INFO - POST /auth/login -> 200 (0.2327s)
+2026-08-26 01:31:19,463 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:31:19,698 - app.core.logging - INFO - POST /auth/register -> 201 (0.2327s)
+2026-08-26 01:31:19,699 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:31:19,937 - app.core.logging - INFO - POST /auth/login -> 200 (0.2350s)
+2026-08-26 01:31:19,938 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:31:20,208 - app.core.logging - INFO - POST /auth/register -> 201 (0.2672s)
+2026-08-26 01:31:20,209 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:31:20,440 - app.core.logging - INFO - POST /auth/login -> 200 (0.2286s)
+2026-08-26 01:31:20,443 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:31:20,471 - app.core.logging - INFO - POST /events -> 422 (0.0261s)
+2026-08-26 01:31:20,472 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:31:40,264 - app.core.logging - INFO - POST /auth/register -> 201 (0.2739s)
+2026-08-26 01:31:40,267 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:31:40,498 - app.core.logging - INFO - POST /auth/login -> 200 (0.2292s)
+2026-08-26 01:31:40,500 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:31:40,522 - app.core.logging - INFO - POST /events -> 422 (0.0192s)
+2026-08-26 01:31:40,523 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:32:12,371 - app.core.logging - INFO - POST /auth/register -> 201 (0.2938s)
+2026-08-26 01:32:12,374 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:32:12,615 - app.core.logging - INFO - POST /auth/login -> 200 (0.2377s)
+2026-08-26 01:32:12,617 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:32:12,871 - app.core.logging - INFO - POST /auth/register -> 201 (0.2505s)
+2026-08-26 01:32:12,873 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:32:13,129 - app.core.logging - INFO - POST /auth/login -> 200 (0.2532s)
+2026-08-26 01:32:13,131 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:32:13,374 - app.core.logging - INFO - POST /auth/register -> 201 (0.2402s)
+2026-08-26 01:32:13,376 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:32:13,614 - app.core.logging - INFO - POST /auth/login -> 200 (0.2359s)
+2026-08-26 01:32:13,617 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:32:13,651 - app.core.logging - INFO - Event created: Event A
+2026-08-26 01:32:13,653 - app.core.logging - INFO - POST /events -> 201 (0.0332s)
+2026-08-26 01:32:13,657 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:32:13,671 - app.core.logging - INFO - Event created: Event B
+2026-08-26 01:32:13,672 - app.core.logging - INFO - POST /events -> 201 (0.0118s)
+2026-08-26 01:32:13,674 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:32:13,857 - app.core.logging - INFO - Member added to event: 16
+2026-08-26 01:32:13,858 - app.core.logging - INFO - POST /events/16/members -> 201 (0.1749s)
+2026-08-26 01:32:13,860 - httpx - INFO - HTTP Request: POST http://testserver/events/16/members "HTTP/1.1 201 Created"
+2026-08-26 01:32:13,869 - app.core.logging - INFO - POST /events/16/event-tasks -> 422 (0.0072s)
+2026-08-26 01:32:13,870 - httpx - INFO - HTTP Request: POST http://testserver/events/16/event-tasks "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:34:11,038 - app.core.logging - INFO - POST /auth/register -> 201 (0.3046s)
+2026-08-26 01:34:11,041 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:34:11,316 - app.core.logging - INFO - POST /auth/login -> 200 (0.2728s)
+2026-08-26 01:34:11,318 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:34:11,606 - app.core.logging - INFO - POST /auth/register -> 201 (0.2862s)
+2026-08-26 01:34:11,608 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:34:11,846 - app.core.logging - INFO - POST /auth/login -> 200 (0.2348s)
+2026-08-26 01:34:11,848 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:34:12,113 - app.core.logging - INFO - POST /auth/register -> 201 (0.2634s)
+2026-08-26 01:34:12,115 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:34:12,350 - app.core.logging - INFO - POST /auth/login -> 200 (0.2313s)
+2026-08-26 01:34:12,352 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:34:12,420 - app.core.logging - INFO - Event created: Event A
+2026-08-26 01:34:12,421 - app.core.logging - INFO - POST /events -> 201 (0.0669s)
+2026-08-26 01:34:12,424 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:34:12,438 - app.core.logging - INFO - Event created: Event B
+2026-08-26 01:34:12,439 - app.core.logging - INFO - POST /events -> 201 (0.0117s)
+2026-08-26 01:34:12,441 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:34:12,600 - app.core.logging - INFO - Member added to event: 18
+2026-08-26 01:34:12,601 - app.core.logging - INFO - POST /events/18/members -> 201 (0.1534s)
+2026-08-26 01:34:12,603 - httpx - INFO - HTTP Request: POST http://testserver/events/18/members "HTTP/1.1 201 Created"
+2026-08-26 01:34:12,613 - app.core.logging - INFO - POST /events/18/event-tasks -> 422 (0.0078s)
+2026-08-26 01:34:12,615 - httpx - INFO - HTTP Request: POST http://testserver/events/18/event-tasks "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:35:05,827 - app.core.logging - INFO - POST /auth/register -> 201 (0.2794s)
+2026-08-26 01:35:05,829 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:35:06,068 - app.core.logging - INFO - POST /auth/login -> 200 (0.2365s)
+2026-08-26 01:35:06,070 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:35:06,312 - app.core.logging - INFO - POST /auth/register -> 201 (0.2395s)
+2026-08-26 01:35:06,314 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:35:06,549 - app.core.logging - INFO - POST /auth/login -> 200 (0.2331s)
+2026-08-26 01:35:06,551 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:35:06,870 - app.core.logging - INFO - POST /auth/register -> 201 (0.3172s)
+2026-08-26 01:35:06,873 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:35:07,115 - app.core.logging - INFO - POST /auth/login -> 200 (0.2409s)
+2026-08-26 01:35:07,118 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:35:07,144 - app.core.logging - INFO - Event created: Event A
+2026-08-26 01:35:07,145 - app.core.logging - INFO - POST /events -> 201 (0.0252s)
+2026-08-26 01:35:07,146 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:35:07,155 - app.core.logging - INFO - Event created: Event B
+2026-08-26 01:35:07,155 - app.core.logging - INFO - POST /events -> 201 (0.0072s)
+2026-08-26 01:35:07,157 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:35:07,302 - app.core.logging - INFO - Member added to event: 20
+2026-08-26 01:35:07,303 - app.core.logging - INFO - POST /events/20/members -> 201 (0.1406s)
+2026-08-26 01:35:07,305 - httpx - INFO - HTTP Request: POST http://testserver/events/20/members "HTTP/1.1 201 Created"
+2026-08-26 01:35:39,501 - app.core.logging - INFO - POST /auth/register -> 201 (0.2534s)
+2026-08-26 01:35:39,504 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:35:39,737 - app.core.logging - INFO - POST /auth/login -> 200 (0.2318s)
+2026-08-26 01:35:39,739 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:35:40,005 - app.core.logging - INFO - POST /auth/register -> 201 (0.2632s)
+2026-08-26 01:35:40,007 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:35:40,235 - app.core.logging - INFO - POST /auth/login -> 200 (0.2268s)
+2026-08-26 01:35:40,237 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:35:40,476 - app.core.logging - INFO - POST /auth/register -> 201 (0.2366s)
+2026-08-26 01:35:40,478 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:35:40,713 - app.core.logging - INFO - POST /auth/login -> 200 (0.2323s)
+2026-08-26 01:35:40,715 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:35:40,775 - app.core.logging - INFO - Event created: Event A
+2026-08-26 01:35:40,776 - app.core.logging - INFO - POST /events -> 201 (0.0587s)
+2026-08-26 01:35:40,779 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:35:40,789 - app.core.logging - INFO - Event created: Event B
+2026-08-26 01:35:40,790 - app.core.logging - INFO - POST /events -> 201 (0.0089s)
+2026-08-26 01:35:40,792 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:35:41,021 - app.core.logging - INFO - Member added to event: 22
+2026-08-26 01:35:41,021 - app.core.logging - INFO - POST /events/22/members -> 201 (0.2239s)
+2026-08-26 01:35:41,023 - httpx - INFO - HTTP Request: POST http://testserver/events/22/members "HTTP/1.1 201 Created"
+2026-08-26 01:37:03,022 - app.core.logging - INFO - POST /auth/register -> 201 (0.2515s)
+2026-08-26 01:37:03,024 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:37:03,256 - app.core.logging - INFO - POST /auth/login -> 200 (0.2300s)
+2026-08-26 01:37:03,258 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:37:03,488 - app.core.logging - INFO - POST /auth/register -> 201 (0.2275s)
+2026-08-26 01:37:03,490 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:37:03,733 - app.core.logging - INFO - POST /auth/login -> 200 (0.2412s)
+2026-08-26 01:37:03,735 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:37:04,037 - app.core.logging - INFO - POST /auth/register -> 201 (0.2988s)
+2026-08-26 01:37:04,039 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:37:04,266 - app.core.logging - INFO - POST /auth/login -> 200 (0.2258s)
+2026-08-26 01:37:04,268 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:37:04,292 - app.core.logging - INFO - Event created: Event A
+2026-08-26 01:37:04,293 - app.core.logging - INFO - POST /events -> 201 (0.0229s)
+2026-08-26 01:37:04,295 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:37:04,304 - app.core.logging - INFO - Event created: Event B
+2026-08-26 01:37:04,304 - app.core.logging - INFO - POST /events -> 201 (0.0075s)
+2026-08-26 01:37:04,306 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 01:37:04,457 - app.core.logging - INFO - Member added to event: 24
+2026-08-26 01:37:04,458 - app.core.logging - INFO - POST /events/24/members -> 201 (0.1468s)
+2026-08-26 01:37:04,459 - httpx - INFO - HTTP Request: POST http://testserver/events/24/members "HTTP/1.1 201 Created"
+2026-08-26 01:37:04,487 - app.core.logging - INFO - GET /events/24 -> 200 (0.0065s)
+2026-08-26 01:37:04,489 - httpx - INFO - HTTP Request: GET http://testserver/events/24 "HTTP/1.1 200 OK"
+2026-08-26 01:37:04,496 - app.core.logging - INFO - GET /events/24 -> 200 (0.0046s)
+2026-08-26 01:37:04,497 - httpx - INFO - HTTP Request: GET http://testserver/events/24 "HTTP/1.1 200 OK"
+2026-08-26 01:37:04,504 - app.core.logging - INFO - GET /events/24 -> 401 (0.0052s)
+2026-08-26 01:37:04,505 - httpx - INFO - HTTP Request: GET http://testserver/events/24 "HTTP/1.1 401 Unauthorized"
+2026-08-26 01:37:04,507 - app.core.logging - INFO - GET /events/24 -> 401 (0.0003s)
+2026-08-26 01:37:04,508 - httpx - INFO - HTTP Request: GET http://testserver/events/24 "HTTP/1.1 401 Unauthorized"
+2026-08-26 01:37:04,533 - app.core.logging - INFO - GET /event-tasks/12 -> 401 (0.0153s)
+2026-08-26 01:37:04,534 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/12 "HTTP/1.1 401 Unauthorized"
+2026-08-26 01:37:04,541 - app.core.logging - INFO - GET /event-tasks/13 -> 200 (0.0051s)
+2026-08-26 01:37:04,543 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/13 "HTTP/1.1 200 OK"
+2026-08-26 01:37:04,550 - app.core.logging - INFO - GET /event-tasks/99999 -> 404 (0.0056s)
+2026-08-26 01:37:04,551 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/99999 "HTTP/1.1 404 Not Found"
+2026-08-26 01:37:04,557 - app.core.logging - INFO - PATCH /event-tasks/13 -> 422 (0.0038s)
+2026-08-26 01:37:04,558 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/13 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:37:04,563 - app.core.logging - INFO - PATCH /event-tasks/12 -> 422 (0.0037s)
+2026-08-26 01:37:04,564 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/12 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:37:04,569 - app.core.logging - INFO - PATCH /event-tasks/12 -> 422 (0.0029s)
+2026-08-26 01:37:04,570 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/12 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:37:04,575 - app.core.logging - INFO - PATCH /event-tasks/12 -> 422 (0.0032s)
+2026-08-26 01:37:04,576 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/12 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:37:04,578 - app.core.logging - INFO - GET /events/24 -> 401 (0.0003s)
+2026-08-26 01:37:04,579 - httpx - INFO - HTTP Request: GET http://testserver/events/24 "HTTP/1.1 401 Unauthorized"
+2026-08-26 01:37:04,586 - app.core.logging - INFO - GET /events/25 -> 401 (0.0054s)
+2026-08-26 01:37:04,587 - httpx - INFO - HTTP Request: GET http://testserver/events/25 "HTTP/1.1 401 Unauthorized"
+2026-08-26 01:37:04,595 - app.core.logging - INFO - GET /events/24/members -> 200 (0.0064s)
+2026-08-26 01:37:04,597 - httpx - INFO - HTTP Request: GET http://testserver/events/24/members?page=-1&limit=0 "HTTP/1.1 200 OK"
+2026-08-26 01:37:30,838 - app.core.logging - INFO - POST /auth/register -> 201 (0.3236s)
+2026-08-26 01:37:30,840 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:37:30,847 - app.core.logging - INFO - POST /auth/register -> 400 (0.0047s)
+2026-08-26 01:37:30,848 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-08-26 01:37:30,852 - app.core.logging - INFO - POST /auth/register -> 422 (0.0019s)
+2026-08-26 01:37:30,853 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 01:37:41,897 - app.core.logging - INFO - POST /auth/register -> 201 (0.3555s)
+2026-08-26 01:37:41,900 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 01:37:42,140 - app.core.logging - INFO - POST /auth/login -> 200 (0.2377s)
+2026-08-26 01:37:42,143 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 01:37:42,149 - app.core.logging - INFO - POST /auth/refresh -> 200 (0.0041s)
+2026-08-26 01:37:42,151 - httpx - INFO - HTTP Request: POST http://testserver/auth/refresh?refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0XzNhOTQzZDNmQGV4YW1wbGUuY29tIiwiZXhwIjoxNzg4Mjg3ODYyLCJ0eXBlIjoicmVmcmVzaCJ9.Qyqui_9lxRUUPdIr0eTZnewo7xjif8l1vtHN4nybBZw "HTTP/1.1 200 OK"
+2026-08-26 01:37:42,156 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0017s)
+2026-08-26 01:37:42,157 - httpx - INFO - HTTP Request: POST http://testserver/auth/refresh?refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0XzNhOTQzZDNmQGV4YW1wbGUuY29tIiwiZXhwIjoxNzg3Njg0ODYyfQ.zB2C1MZo9hDhenSbyxPKDdNBS4tVGLvw98Jk3s2SXh0 "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:16,769 - app.core.logging - INFO - POST /auth/register -> 201 (0.3009s)
+2026-08-26 02:17:16,773 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 02:17:16,781 - app.core.logging - INFO - POST /auth/register -> 422 (0.0033s)
+2026-08-26 02:17:16,782 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:46,383 - app.core.logging - INFO - POST /auth/register -> 201 (0.3947s)
+2026-08-26 02:17:46,387 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 02:17:46,411 - app.core.logging - INFO - POST /auth/register -> 422 (0.0121s)
+2026-08-26 02:17:46,413 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:46,745 - app.core.logging - INFO - POST /auth/register -> 201 (0.3142s)
+2026-08-26 02:17:46,750 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 02:17:46,794 - app.core.logging - INFO - POST /auth/register -> 400 (0.0235s)
+2026-08-26 02:17:46,798 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-08-26 02:17:47,221 - app.core.logging - INFO - POST /auth/login -> 200 (0.3970s)
+2026-08-26 02:17:47,224 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 02:17:47,583 - app.core.logging - INFO - POST /auth/login -> 400 (0.3484s)
+2026-08-26 02:17:47,585 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 400 Bad Request"
+2026-08-26 02:17:47,608 - app.core.logging - INFO - POST /auth/login -> 400 (0.0105s)
+2026-08-26 02:17:47,614 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 400 Bad Request"
+2026-08-26 02:17:47,650 - app.core.logging - INFO - GET /users/me -> 401 (0.0092s)
+2026-08-26 02:17:47,653 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:47,681 - app.core.logging - INFO - GET /users/me -> 401 (0.0096s)
+2026-08-26 02:17:47,683 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:47,703 - app.core.logging - INFO - GET /users/me -> 401 (0.0070s)
+2026-08-26 02:17:47,705 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:47,718 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0071s)
+2026-08-26 02:17:47,720 - httpx - INFO - HTTP Request: POST http://testserver/auth/refresh?refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X2JmMzkzNDQ0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzg4MjkwMjY3fQ.FSVj_TRcJjk4ba8MEuouWZ-64ozoiPF8SgITWT3e_rA "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:47,732 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0047s)
+2026-08-26 02:17:47,734 - httpx - INFO - HTTP Request: POST http://testserver/auth/refresh?refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X2JmMzkzNDQ0QGV4YW1wbGUuY29tIiwiZXhwIjoxNzg3Njg3MjY3fQ.3dZBOzMXYVzWVEcv9l9W8ANBiLLtCK4xngEcVdOcAhk "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:47,749 - app.core.logging - INFO - GET /users/me -> 200 (0.0062s)
+2026-08-26 02:17:47,752 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 200 OK"
+2026-08-26 02:17:47,760 - app.core.logging - INFO - GET /users/me -> 401 (0.0004s)
+2026-08-26 02:17:47,762 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:47,791 - app.core.logging - INFO - GET /users/ -> 403 (0.0190s)
+2026-08-26 02:17:47,792 - httpx - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 403 Forbidden"
+2026-08-26 02:17:48,087 - app.core.logging - INFO - POST /auth/register -> 201 (0.2880s)
+2026-08-26 02:17:48,091 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 02:17:48,422 - app.core.logging - INFO - POST /auth/login -> 200 (0.3225s)
+2026-08-26 02:17:48,426 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 02:17:48,783 - app.core.logging - INFO - POST /auth/register -> 201 (0.3436s)
+2026-08-26 02:17:48,785 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 02:17:49,181 - app.core.logging - INFO - POST /auth/login -> 200 (0.3790s)
+2026-08-26 02:17:49,183 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,509 - app.core.logging - INFO - Event created: Event A
+2026-08-26 02:17:49,511 - app.core.logging - INFO - POST /events -> 201 (0.3079s)
+2026-08-26 02:17:49,514 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 02:17:49,526 - app.core.logging - INFO - POST /events -> 422 (0.0080s)
+2026-08-26 02:17:49,528 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:49,552 - app.core.logging - INFO - GET /events -> 200 (0.0163s)
+2026-08-26 02:17:49,555 - httpx - INFO - HTTP Request: GET http://testserver/events "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,570 - app.core.logging - INFO - GET /events/26 -> 200 (0.0119s)
+2026-08-26 02:17:49,572 - httpx - INFO - HTTP Request: GET http://testserver/events/26 "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,605 - app.core.logging - INFO - Member added to event: 26
+2026-08-26 02:17:49,606 - app.core.logging - INFO - POST /events/26/members -> 201 (0.0276s)
+2026-08-26 02:17:49,608 - httpx - INFO - HTTP Request: POST http://testserver/events/26/members "HTTP/1.1 201 Created"
+2026-08-26 02:17:49,624 - app.core.logging - INFO - GET /events/26 -> 200 (0.0112s)
+2026-08-26 02:17:49,626 - httpx - INFO - HTTP Request: GET http://testserver/events/26 "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,649 - app.core.logging - INFO - GET /events/26 -> 401 (0.0141s)
+2026-08-26 02:17:49,652 - httpx - INFO - HTTP Request: GET http://testserver/events/26 "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:49,669 - app.core.logging - INFO - GET /events/99999 -> 404 (0.0111s)
+2026-08-26 02:17:49,671 - httpx - INFO - HTTP Request: GET http://testserver/events/99999 "HTTP/1.1 404 Not Found"
+2026-08-26 02:17:49,700 - app.core.logging - INFO - Event updated: 26
+2026-08-26 02:17:49,701 - app.core.logging - INFO - PUT /events/26 -> 200 (0.0249s)
+2026-08-26 02:17:49,704 - httpx - INFO - HTTP Request: PUT http://testserver/events/26 "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,725 - app.core.logging - INFO - Event patched: 26
+2026-08-26 02:17:49,734 - app.core.logging - INFO - PATCH /events/26 -> 200 (0.0162s)
+2026-08-26 02:17:49,738 - httpx - INFO - HTTP Request: PATCH http://testserver/events/26 "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,753 - app.core.logging - INFO - DELETE /events/26 -> 401 (0.0088s)
+2026-08-26 02:17:49,755 - httpx - INFO - HTTP Request: DELETE http://testserver/events/26 "HTTP/1.1 401 Unauthorized"
+2026-08-26 02:17:49,774 - app.core.logging - INFO - Member added to event: 26
+2026-08-26 02:17:49,775 - app.core.logging - INFO - POST /events/26/members -> 201 (0.0172s)
+2026-08-26 02:17:49,778 - httpx - INFO - HTTP Request: POST http://testserver/events/26/members "HTTP/1.1 201 Created"
+2026-08-26 02:17:49,792 - app.core.logging - INFO - POST /events/26/members -> 400 (0.0111s)
+2026-08-26 02:17:49,793 - httpx - INFO - HTTP Request: POST http://testserver/events/26/members "HTTP/1.1 400 Bad Request"
+2026-08-26 02:17:49,808 - app.core.logging - INFO - POST /events/26/members -> 404 (0.0118s)
+2026-08-26 02:17:49,809 - httpx - INFO - HTTP Request: POST http://testserver/events/26/members "HTTP/1.1 404 Not Found"
+2026-08-26 02:17:49,825 - app.core.logging - INFO - GET /events/26/members -> 200 (0.0114s)
+2026-08-26 02:17:49,828 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members "HTTP/1.1 200 OK"
+2026-08-26 02:17:49,840 - app.core.logging - INFO - DELETE /events/26/members/41 -> 400 (0.0102s)
+2026-08-26 02:17:49,842 - httpx - INFO - HTTP Request: DELETE http://testserver/events/26/members/41 "HTTP/1.1 400 Bad Request"
+2026-08-26 02:17:49,863 - app.core.logging - INFO - Member removed from event: 26
+2026-08-26 02:17:49,864 - app.core.logging - INFO - DELETE /events/26/members/42 -> 204 (0.0185s)
+2026-08-26 02:17:49,867 - httpx - INFO - HTTP Request: DELETE http://testserver/events/26/members/42 "HTTP/1.1 204 No Content"
+2026-08-26 02:17:49,887 - app.core.logging - INFO - DELETE /events/26/members/42 -> 400 (0.0166s)
+2026-08-26 02:17:49,889 - httpx - INFO - HTTP Request: DELETE http://testserver/events/26/members/42 "HTTP/1.1 400 Bad Request"
+2026-08-26 02:17:49,925 - app.core.logging - INFO - POST /events/26/event-tasks -> 201 (0.0295s)
+2026-08-26 02:17:49,930 - httpx - INFO - HTTP Request: POST http://testserver/events/26/event-tasks "HTTP/1.1 201 Created"
+2026-08-26 02:17:49,953 - app.core.logging - INFO - POST /events/26/event-tasks -> 422 (0.0081s)
+2026-08-26 02:17:49,955 - httpx - INFO - HTTP Request: POST http://testserver/events/26/event-tasks "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:49,985 - app.core.logging - INFO - GET /event-tasks/15 -> 200 (0.0252s)
+2026-08-26 02:17:49,988 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/15 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,009 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/99999 "HTTP/1.1 500 Internal Server Error"
+2026-08-26 02:17:50,034 - app.core.logging - INFO - PATCH /event-tasks/15 -> 200 (0.0215s)
+2026-08-26 02:17:50,037 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/15 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,050 - httpx - INFO - HTTP Request: DELETE http://testserver/event-tasks/15 "HTTP/1.1 500 Internal Server Error"
+2026-08-26 02:17:50,063 - app.core.logging - INFO - PATCH /event-tasks/16 -> 422 (0.0051s)
+2026-08-26 02:17:50,064 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,077 - app.core.logging - INFO - PATCH /event-tasks/16 -> 200 (0.0109s)
+2026-08-26 02:17:50,080 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,096 - app.core.logging - INFO - PATCH /event-tasks/16 -> 200 (0.0136s)
+2026-08-26 02:17:50,099 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,118 - app.core.logging - INFO - PATCH /event-tasks/16 -> 200 (0.0157s)
+2026-08-26 02:17:50,120 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,129 - app.core.logging - INFO - PATCH /event-tasks/16 -> 422 (0.0055s)
+2026-08-26 02:17:50,130 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,138 - app.core.logging - INFO - PATCH /event-tasks/16 -> 422 (0.0057s)
+2026-08-26 02:17:50,140 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,149 - app.core.logging - INFO - PATCH /event-tasks/16 -> 422 (0.0054s)
+2026-08-26 02:17:50,151 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,169 - app.core.logging - INFO - PATCH /event-tasks/16 -> 200 (0.0158s)
+2026-08-26 02:17:50,172 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,191 - app.core.logging - INFO - PATCH /event-tasks/16 -> 200 (0.0161s)
+2026-08-26 02:17:50,194 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,212 - app.core.logging - INFO - PATCH /event-tasks/16 -> 200 (0.0156s)
+2026-08-26 02:17:50,215 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,225 - app.core.logging - INFO - PATCH /event-tasks/16 -> 422 (0.0068s)
+2026-08-26 02:17:50,227 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,235 - app.core.logging - INFO - PATCH /event-tasks/16 -> 422 (0.0055s)
+2026-08-26 02:17:50,237 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/16 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,248 - app.core.logging - INFO - GET /events/26/members -> 200 (0.0082s)
+2026-08-26 02:17:50,251 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members?page=1&limit=5 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,259 - app.core.logging - INFO - GET /events/26/members -> 422 (0.0049s)
+2026-08-26 02:17:50,260 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members?page=0&limit=5 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,268 - app.core.logging - INFO - GET /events/26/members -> 422 (0.0058s)
+2026-08-26 02:17:50,270 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members?page=-1&limit=5 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,277 - app.core.logging - INFO - GET /events/26/members -> 422 (0.0044s)
+2026-08-26 02:17:50,278 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members?page=1&limit=0 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,286 - app.core.logging - INFO - GET /events/26/members -> 422 (0.0052s)
+2026-08-26 02:17:50,287 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members?page=1&limit=-1 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 02:17:50,299 - app.core.logging - INFO - GET /events/26/members -> 200 (0.0085s)
+2026-08-26 02:17:50,301 - httpx - INFO - HTTP Request: GET http://testserver/events/26/members?page=999&limit=5 "HTTP/1.1 200 OK"
+2026-08-26 02:17:50,324 - httpx - INFO - HTTP Request: DELETE http://testserver/events/26 "HTTP/1.1 500 Internal Server Error"
+2026-08-26 02:17:50,341 - httpx - INFO - HTTP Request: DELETE http://testserver/events/26 "HTTP/1.1 500 Internal Server Error"
+2026-08-26 02:18:28,924 - app.core.logging - INFO - GET /event-tasks/99999 -> 401 (0.0484s)
+2026-08-26 02:18:28,927 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/99999 "HTTP/1.1 401 Unauthorized"
+2026-08-26 12:42:35,862 - app.core.logging - INFO - GET /events/99999 -> 401 (0.0244s)
+2026-08-26 12:42:56,391 - app.core.logging - INFO - POST /auth/login -> 200 (0.3098s)
+2026-08-26 12:43:17,413 - app.core.logging - INFO - GET /events/99999 -> 404 (0.0203s)
+2026-08-26 14:59:28,622 - app.core.logging - INFO - POST /auth/register -> 201 (0.3064s)
+2026-08-26 14:59:28,857 - app.core.logging - INFO - POST /auth/login -> 200 (0.2315s)
+2026-08-26 14:59:28,881 - app.core.logging - INFO - POST /events -> 422 (0.0204s)
+2026-08-26 14:59:28,893 - app.core.logging - INFO - GET /events -> 404 (0.0086s)
+2026-08-26 14:59:28,901 - app.core.logging - INFO - GET /events/None -> 422 (0.0052s)
+2026-08-26 14:59:28,911 - app.core.logging - INFO - GET /users/me -> 200 (0.0061s)
+2026-08-26 14:59:28,918 - app.core.logging - INFO - PATCH /events/None -> 422 (0.0046s)
+2026-08-26 14:59:28,925 - app.core.logging - INFO - DELETE /events/None -> 422 (0.0041s)
+2026-08-26 15:17:38,626 - app.core.logging - INFO - POST /auth/register -> 201 (0.2616s)
+2026-08-26 15:17:38,628 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 15:17:38,633 - app.core.logging - INFO - POST /auth/register -> 422 (0.0027s)
+2026-08-26 15:17:38,634 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:38,639 - app.core.logging - INFO - POST /auth/register -> 400 (0.0036s)
+2026-08-26 15:17:38,640 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-08-26 15:17:38,645 - app.core.logging - INFO - POST /auth/register -> 400 (0.0034s)
+2026-08-26 15:17:38,647 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 400 Bad Request"
+2026-08-26 15:17:38,872 - app.core.logging - INFO - POST /auth/login -> 200 (0.2235s)
+2026-08-26 15:17:38,874 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 15:17:39,099 - app.core.logging - INFO - POST /auth/login -> 400 (0.2225s)
+2026-08-26 15:17:39,100 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 400 Bad Request"
+2026-08-26 15:17:39,106 - app.core.logging - INFO - POST /auth/login -> 400 (0.0042s)
+2026-08-26 15:17:39,107 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 400 Bad Request"
+2026-08-26 15:17:39,114 - app.core.logging - INFO - GET /users/me -> 401 (0.0054s)
+2026-08-26 15:17:39,115 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:39,119 - app.core.logging - INFO - GET /users/me -> 401 (0.0014s)
+2026-08-26 15:17:39,120 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:39,123 - app.core.logging - INFO - GET /users/me -> 401 (0.0013s)
+2026-08-26 15:17:39,124 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:39,128 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0021s)
+2026-08-26 15:17:39,129 - httpx - INFO - HTTP Request: POST http://testserver/auth/refresh?refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X2JhZThkMzg4QGV4YW1wbGUuY29tIiwiZXhwIjoxNzg4MzM3MDU4fQ.CBcX435-GUym__Io6a5nIDKuHwlw79MHXAZoOiaCGJI "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:39,133 - app.core.logging - INFO - POST /auth/refresh -> 401 (0.0015s)
+2026-08-26 15:17:39,134 - httpx - INFO - HTTP Request: POST http://testserver/auth/refresh?refresh_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X2JhZThkMzg4QGV4YW1wbGUuY29tIiwiZXhwIjoxNzg3NzM0MDU4fQ.Uk5wVkIVPSBmSy6Q3ZGBO4ZgiOpKLsIuvAeAGm9ZC54 "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:39,140 - app.core.logging - INFO - GET /users/me -> 200 (0.0042s)
+2026-08-26 15:17:39,141 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 200 OK"
+2026-08-26 15:17:39,143 - app.core.logging - INFO - GET /users/me -> 401 (0.0003s)
+2026-08-26 15:17:39,144 - httpx - INFO - HTTP Request: GET http://testserver/users/me "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:39,151 - app.core.logging - INFO - GET /users/ -> 403 (0.0043s)
+2026-08-26 15:17:39,152 - httpx - INFO - HTTP Request: GET http://testserver/users/ "HTTP/1.1 403 Forbidden"
+2026-08-26 15:17:39,380 - app.core.logging - INFO - POST /auth/register -> 201 (0.2261s)
+2026-08-26 15:17:39,383 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 15:17:39,612 - app.core.logging - INFO - POST /auth/login -> 200 (0.2269s)
+2026-08-26 15:17:39,614 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 15:17:39,844 - app.core.logging - INFO - POST /auth/register -> 201 (0.2283s)
+2026-08-26 15:17:39,846 - httpx - INFO - HTTP Request: POST http://testserver/auth/register "HTTP/1.1 201 Created"
+2026-08-26 15:17:40,069 - app.core.logging - INFO - POST /auth/login -> 200 (0.2215s)
+2026-08-26 15:17:40,071 - httpx - INFO - HTTP Request: POST http://testserver/auth/login "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,197 - app.core.logging - INFO - Event created: Event A
+2026-08-26 15:17:40,198 - app.core.logging - INFO - POST /events -> 201 (0.1230s)
+2026-08-26 15:17:40,200 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 15:17:40,209 - app.core.logging - INFO - Event created: No created at
+2026-08-26 15:17:40,210 - app.core.logging - INFO - POST /events -> 201 (0.0073s)
+2026-08-26 15:17:40,211 - httpx - INFO - HTTP Request: POST http://testserver/events "HTTP/1.1 201 Created"
+2026-08-26 15:17:40,217 - app.core.logging - INFO - GET /events -> 200 (0.0046s)
+2026-08-26 15:17:40,219 - httpx - INFO - HTTP Request: GET http://testserver/events "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,241 - app.core.logging - INFO - GET /events/27 -> 200 (0.0207s)
+2026-08-26 15:17:40,243 - httpx - INFO - HTTP Request: GET http://testserver/events/27 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,261 - app.core.logging - INFO - Member added to event: 27
+2026-08-26 15:17:40,261 - app.core.logging - INFO - POST /events/27/members -> 201 (0.0161s)
+2026-08-26 15:17:40,264 - httpx - INFO - HTTP Request: POST http://testserver/events/27/members "HTTP/1.1 201 Created"
+2026-08-26 15:17:40,270 - app.core.logging - INFO - GET /events/27 -> 200 (0.0047s)
+2026-08-26 15:17:40,272 - httpx - INFO - HTTP Request: GET http://testserver/events/27 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,278 - app.core.logging - INFO - GET /events/27 -> 401 (0.0049s)
+2026-08-26 15:17:40,279 - httpx - INFO - HTTP Request: GET http://testserver/events/27 "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:40,285 - app.core.logging - INFO - GET /events/99999 -> 404 (0.0041s)
+2026-08-26 15:17:40,286 - httpx - INFO - HTTP Request: GET http://testserver/events/99999 "HTTP/1.1 404 Not Found"
+2026-08-26 15:17:40,300 - app.core.logging - INFO - Event updated: 27
+2026-08-26 15:17:40,301 - app.core.logging - INFO - PUT /events/27 -> 200 (0.0127s)
+2026-08-26 15:17:40,302 - httpx - INFO - HTTP Request: PUT http://testserver/events/27 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,312 - app.core.logging - INFO - Event patched: 27
+2026-08-26 15:17:40,313 - app.core.logging - INFO - PATCH /events/27 -> 200 (0.0085s)
+2026-08-26 15:17:40,314 - httpx - INFO - HTTP Request: PATCH http://testserver/events/27 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,321 - app.core.logging - INFO - DELETE /events/27 -> 401 (0.0051s)
+2026-08-26 15:17:40,322 - httpx - INFO - HTTP Request: DELETE http://testserver/events/27 "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:40,334 - app.core.logging - INFO - Member added to event: 27
+2026-08-26 15:17:40,335 - app.core.logging - INFO - POST /events/27/members -> 201 (0.0106s)
+2026-08-26 15:17:40,336 - httpx - INFO - HTTP Request: POST http://testserver/events/27/members "HTTP/1.1 201 Created"
+2026-08-26 15:17:40,344 - app.core.logging - INFO - POST /events/27/members -> 400 (0.0058s)
+2026-08-26 15:17:40,345 - httpx - INFO - HTTP Request: POST http://testserver/events/27/members "HTTP/1.1 400 Bad Request"
+2026-08-26 15:17:40,353 - app.core.logging - INFO - POST /events/27/members -> 404 (0.0053s)
+2026-08-26 15:17:40,354 - httpx - INFO - HTTP Request: POST http://testserver/events/27/members "HTTP/1.1 404 Not Found"
+2026-08-26 15:17:40,363 - app.core.logging - INFO - GET /events/27/members -> 200 (0.0069s)
+2026-08-26 15:17:40,364 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,370 - app.core.logging - INFO - DELETE /events/27/members/45 -> 401 (0.0045s)
+2026-08-26 15:17:40,371 - httpx - INFO - HTTP Request: DELETE http://testserver/events/27/members/45 "HTTP/1.1 401 Unauthorized"
+2026-08-26 15:17:40,382 - app.core.logging - INFO - Member removed from event: 27
+2026-08-26 15:17:40,382 - app.core.logging - INFO - DELETE /events/27/members/46 -> 204 (0.0093s)
+2026-08-26 15:17:40,384 - httpx - INFO - HTTP Request: DELETE http://testserver/events/27/members/46 "HTTP/1.1 204 No Content"
+2026-08-26 15:17:40,392 - app.core.logging - INFO - DELETE /events/27/members/46 -> 400 (0.0065s)
+2026-08-26 15:17:40,393 - httpx - INFO - HTTP Request: DELETE http://testserver/events/27/members/46 "HTTP/1.1 400 Bad Request"
+2026-08-26 15:17:40,419 - app.core.logging - INFO - POST /events/27/event-tasks -> 201 (0.0236s)
+2026-08-26 15:17:40,421 - httpx - INFO - HTTP Request: POST http://testserver/events/27/event-tasks "HTTP/1.1 201 Created"
+2026-08-26 15:17:40,431 - app.core.logging - INFO - POST /events/27/event-tasks -> 422 (0.0042s)
+2026-08-26 15:17:40,432 - httpx - INFO - HTTP Request: POST http://testserver/events/27/event-tasks "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,446 - app.core.logging - INFO - GET /event-tasks/18 -> 200 (0.0119s)
+2026-08-26 15:17:40,447 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/18 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,453 - app.core.logging - INFO - GET /event-tasks/99999 -> 404 (0.0044s)
+2026-08-26 15:17:40,454 - httpx - INFO - HTTP Request: GET http://testserver/event-tasks/99999 "HTTP/1.1 404 Not Found"
+2026-08-26 15:17:40,466 - app.core.logging - INFO - PATCH /event-tasks/18 -> 200 (0.0102s)
+2026-08-26 15:17:40,468 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/18 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,478 - app.core.logging - INFO - DELETE /event-tasks/18 -> 200 (0.0088s)
+2026-08-26 15:17:40,480 - httpx - INFO - HTTP Request: DELETE http://testserver/event-tasks/18 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,489 - app.core.logging - INFO - PATCH /event-tasks/19 -> 422 (0.0036s)
+2026-08-26 15:17:40,490 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,500 - app.core.logging - INFO - PATCH /event-tasks/19 -> 200 (0.0081s)
+2026-08-26 15:17:40,501 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,512 - app.core.logging - INFO - PATCH /event-tasks/19 -> 200 (0.0086s)
+2026-08-26 15:17:40,514 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,525 - app.core.logging - INFO - PATCH /event-tasks/19 -> 200 (0.0094s)
+2026-08-26 15:17:40,527 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,532 - app.core.logging - INFO - PATCH /event-tasks/19 -> 422 (0.0031s)
+2026-08-26 15:17:40,533 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,539 - app.core.logging - INFO - PATCH /event-tasks/19 -> 422 (0.0031s)
+2026-08-26 15:17:40,540 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,545 - app.core.logging - INFO - PATCH /event-tasks/19 -> 422 (0.0032s)
+2026-08-26 15:17:40,546 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,558 - app.core.logging - INFO - PATCH /event-tasks/19 -> 200 (0.0091s)
+2026-08-26 15:17:40,559 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,571 - app.core.logging - INFO - PATCH /event-tasks/19 -> 200 (0.0098s)
+2026-08-26 15:17:40,573 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,584 - app.core.logging - INFO - PATCH /event-tasks/19 -> 200 (0.0095s)
+2026-08-26 15:17:40,586 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,591 - app.core.logging - INFO - PATCH /event-tasks/19 -> 422 (0.0039s)
+2026-08-26 15:17:40,592 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,598 - app.core.logging - INFO - PATCH /event-tasks/19 -> 422 (0.0036s)
+2026-08-26 15:17:40,599 - httpx - INFO - HTTP Request: PATCH http://testserver/event-tasks/19 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,606 - app.core.logging - INFO - GET /events/27/members -> 200 (0.0057s)
+2026-08-26 15:17:40,608 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members?page=1&limit=5 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,613 - app.core.logging - INFO - GET /events/27/members -> 422 (0.0038s)
+2026-08-26 15:17:40,614 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members?page=0&limit=5 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,619 - app.core.logging - INFO - GET /events/27/members -> 422 (0.0034s)
+2026-08-26 15:17:40,620 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members?page=-1&limit=5 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,625 - app.core.logging - INFO - GET /events/27/members -> 422 (0.0033s)
+2026-08-26 15:17:40,626 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members?page=1&limit=0 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,631 - app.core.logging - INFO - GET /events/27/members -> 422 (0.0032s)
+2026-08-26 15:17:40,632 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members?page=1&limit=-1 "HTTP/1.1 422 Unprocessable Entity"
+2026-08-26 15:17:40,639 - app.core.logging - INFO - GET /events/27/members -> 200 (0.0050s)
+2026-08-26 15:17:40,641 - httpx - INFO - HTTP Request: GET http://testserver/events/27/members?page=999&limit=5 "HTTP/1.1 200 OK"
+2026-08-26 15:17:40,656 - httpx - INFO - HTTP Request: DELETE http://testserver/events/27 "HTTP/1.1 500 Internal Server Error"
+2026-08-26 15:17:40,667 - httpx - INFO - HTTP Request: DELETE http://testserver/events/27 "HTTP/1.1 500 Internal Server Error"
+2026-08-26 15:28:54,052 - app.core.logging - INFO - DELETE /events/12 -> 401 (0.0276s)
+2026-08-26 15:29:24,486 - app.core.logging - INFO - POST /auth/login -> 200 (0.2619s)
+2026-08-26 15:29:58,563 - app.core.logging - INFO - DELETE /events/12 -> 401 (0.0085s)
+2026-08-26 15:35:59,631 - app.core.logging - INFO - Event deleted: 5
+2026-08-26 15:35:59,632 - app.core.logging - INFO - DELETE /events/5 -> 204 (0.0652s)
+2026-08-26 16:05:07,059 - app.core.logging - INFO - POST /events -> 401 (0.0382s)
+2026-08-26 16:05:16,031 - app.core.logging - INFO - POST /auth/login -> 200 (0.2667s)
+2026-08-26 16:05:26,957 - app.core.logging - INFO - Event created: làm gi ðó t\u1ed1t
+2026-08-26 16:05:26,959 - app.core.logging - INFO - POST /events -> 201 (0.0189s)

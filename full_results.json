@@ -1,0 +1,582 @@
+[
+  {
+    "module": "Authentication",
+    "case": "Register thành công",
+    "input": "Data hợp lệ",
+    "expected": "201 Created",
+    "actual": "{\"statusCode\":201,\"message\":\"User created successfully\",\"data\":{\"id\":44,\"email\":\"test_bae8d388@example.com\",\"full_name\":\"Test User\",\"is_active\":true,\"created_at\":\"2026-08-26T15:17:39\"},\"error\":null,\"t",
+    "status": 201,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Register thiếu dữ liệu",
+    "input": "Thiếu password",
+    "expected": "422",
+    "actual": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"password\"],\"msg\":\"Field required\",\"input\":{\"email\":\"test_e12e3451@example.com\"}},{\"type\":\"missing\",\"loc\":[\"body\",\"full_name\"],\"msg\":\"Field required\",\"input\"",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Register dữ liệu không hợp lệ",
+    "input": "Email sai format",
+    "expected": "422/400",
+    "actual": "{\"statusCode\":400,\"message\":\"Email already exists\",\"data\":null,\"error\":\"Email already exists\",\"timestamp\":\"2026-08-26T15:17:38.639487\",\"path\":\"/auth/register\"}",
+    "status": 400,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Register email đã tồn tại",
+    "input": "Trùng email",
+    "expected": "409/400",
+    "actual": "{\"statusCode\":400,\"message\":\"Email already exists\",\"data\":null,\"error\":\"Email already exists\",\"timestamp\":\"2026-08-26T15:17:38.645635\",\"path\":\"/auth/register\"}",
+    "status": 400,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Login thành công",
+    "input": "Đúng email, pass",
+    "expected": "200 OK",
+    "actual": "{\"statusCode\":200,\"message\":\"Login successful\",\"data\":{\"access_token\":\"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ0ZXN0X2JhZThkMzg4QGV4YW1wbGUuY29tIiwiZXhwIjoxNzg3NzM0MDU4fQ.Uk5wVkIVPSBmSy6Q3ZGBO",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Login sai password",
+    "input": "Sai pass",
+    "expected": "400/401",
+    "actual": "{\"statusCode\":400,\"message\":\"Invalid password or email\",\"data\":null,\"error\":\"Invalid password or email\",\"timestamp\":\"2026-08-26T15:17:39.099267\",\"path\":\"/auth/login\"}",
+    "status": 400,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Login user không tồn tại",
+    "input": "Email chưa đk",
+    "expected": "400/401",
+    "actual": "{\"statusCode\":400,\"message\":\"Invalid password or email\",\"data\":null,\"error\":\"Invalid password or email\",\"timestamp\":\"2026-08-26T15:17:39.106482\",\"path\":\"/auth/login\"}",
+    "status": 400,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Request không có authentication",
+    "input": "Không có token",
+    "expected": "401",
+    "actual": "{\"detail\":\"Not authenticated\"}",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Token không hợp lệ",
+    "input": "Token rác",
+    "expected": "401",
+    "actual": "{\"statusCode\":401,\"message\":\"Token invalid\",\"data\":null,\"error\":\"Token invalid\",\"timestamp\":\"2026-08-26T15:17:39.119648\",\"path\":\"/users/me\"}",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Token hết hạn",
+    "input": "Token cũ",
+    "expected": "401",
+    "actual": "{\"statusCode\":401,\"message\":\"Token expired\",\"data\":null,\"error\":\"Token expired\",\"timestamp\":\"2026-08-26T15:17:39.123762\",\"path\":\"/users/me\"}",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Refresh token hợp lệ",
+    "input": "Đúng refresh token",
+    "expected": "200",
+    "actual": "{\"statusCode\":401,\"message\":\"Unauthorized\",\"data\":null,\"error\":\"Unauthorized\",\"timestamp\":\"2026-08-26T15:17:39.128681\",\"path\":\"/auth/refresh\"}",
+    "status": 401,
+    "result": "FAIL",
+    "note": ""
+  },
+  {
+    "module": "Authentication",
+    "case": "Refresh token không hợp lệ",
+    "input": "Gửi access token",
+    "expected": "401",
+    "actual": "{\"statusCode\":401,\"message\":\"Unauthorized\",\"data\":null,\"error\":\"Unauthorized\",\"timestamp\":\"2026-08-26T15:17:39.133251\",\"path\":\"/auth/refresh\"}",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "User / Authorization",
+    "case": "Lấy thông tin user hợp lệ",
+    "input": "Token đúng",
+    "expected": "200 OK",
+    "actual": "{\"statusCode\":200,\"message\":\"User retrieved successfully\",\"data\":{\"id\":44,\"email\":\"test_bae8d388@example.com\",\"full_name\":\"Test User\",\"is_active\":true,\"created_at\":\"2026-08-26T15:17:39\"},\"error\":null,",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "User / Authorization",
+    "case": "Truy cập khi chưa đăng nhập",
+    "input": "Không token",
+    "expected": "401",
+    "actual": "{\"detail\":\"Not authenticated\"}",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "User / Authorization",
+    "case": "User không đủ quyền (admin)",
+    "input": "User bth gọi /users/",
+    "expected": "403/401",
+    "actual": "{\"statusCode\":403,\"message\":\"Forbidden\",\"data\":null,\"error\":\"Forbidden\",\"timestamp\":\"2026-08-26T15:17:39.151110\",\"path\":\"/users/\"}",
+    "status": 403,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Tạo event thành công",
+    "input": "Data hợp lệ",
+    "expected": "201 Created",
+    "actual": "{\"statusCode\":201,\"message\":\"Event created successfully\",\"data\":{\"id\":27,\"name\":\"Event A\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17",
+    "status": 201,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Tạo event với dữ liệu không hợp lệ",
+    "input": "Thiếu created_at",
+    "expected": "422",
+    "actual": "{\"statusCode\":201,\"message\":\"Event created successfully\",\"data\":{\"id\":28,\"name\":\"No created at\",\"description\":null,\"owner_id\":44,\"created_at\":\"2026-08-26T15:17:40\"},\"error\":null,\"timestamp\":\"2026-08-2",
+    "status": 201,
+    "result": "FAIL",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Lấy danh sách event",
+    "input": "Gửi req hợp lệ",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event found\",\"data\":{\"id\":27,\"name\":\"Event A\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17:40.217507\",\"pa",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Lấy event theo ID hợp lệ (owner)",
+    "input": "ID đúng, owner",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event found\",\"data\":{\"id\":27,\"name\":\"Event A\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17:40.241143\",\"pa",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Lấy event theo ID hợp lệ (staff)",
+    "input": "ID đúng, staff",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event found\",\"data\":{\"id\":27,\"name\":\"Event A\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17:40.269888\",\"pa",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "User không có quyền truy cập event",
+    "input": "Người ngoài",
+    "expected": "403",
+    "actual": "{\"statusCode\":401,\"message\":\"User not authorized to access this event\",\"data\":null,\"error\":\"User not authorized to access this event\",\"timestamp\":\"2026-08-26T15:17:40.278754\",\"path\":\"/events/27\"}",
+    "status": 401,
+    "result": "FAIL",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Event ID không tồn tại",
+    "input": "ID 99999",
+    "expected": "404",
+    "actual": "{\"statusCode\":404,\"message\":\"Event not found\",\"data\":null,\"error\":\"Event not found\",\"timestamp\":\"2026-08-26T15:17:40.285613\",\"path\":\"/events/99999\"}",
+    "status": 404,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Update event thành công",
+    "input": "Data hợp lệ",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event updated\",\"data\":{\"id\":27,\"name\":\"Event A Updated\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17:40.3",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "PATCH event / PATCH chỉ một field",
+    "input": "Chỉ gửi name",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event patched\",\"data\":{\"id\":27,\"name\":\"Patched Name\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17:40.3123",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Delete khi không có quyền",
+    "input": "Người ngoài xoá",
+    "expected": "403/401",
+    "actual": "{\"statusCode\":401,\"message\":\"User not authorized to delete this event\",\"data\":null,\"error\":\"User not authorized to delete this event\",\"timestamp\":\"2026-08-26T15:17:40.321693\",\"path\":\"/events/27\"}",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "Thêm member/staff thành công",
+    "input": "User ID đúng",
+    "expected": "201",
+    "actual": "{\"statusCode\":201,\"message\":\"Member added to event\",\"data\":{\"id\":27,\"name\":\"Patched Name\",\"description\":\"D\",\"owner_id\":44,\"created_at\":\"2026-01-01T00:00:00\"},\"error\":null,\"timestamp\":\"2026-08-26T15:17",
+    "status": 201,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "Thêm member trùng",
+    "input": "Add lại u3",
+    "expected": "400",
+    "actual": "{\"statusCode\":400,\"message\":\"User is already a member of this event\",\"data\":null,\"error\":\"User is already a member of this event\",\"timestamp\":\"2026-08-26T15:17:40.343992\",\"path\":\"/events/27/members\"}",
+    "status": 400,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "Thêm member không tồn tại",
+    "input": "ID sai",
+    "expected": "404",
+    "actual": "{\"statusCode\":404,\"message\":\"User not found\",\"data\":null,\"error\":\"User not found\",\"timestamp\":\"2026-08-26T15:17:40.352931\",\"path\":\"/events/27/members\"}",
+    "status": 404,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "Xem members",
+    "input": "Owner xem",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Members retrieved successfully\",\"data\":[{\"id\":45,\"email\":\"test_4762a6e8@example.com\",\"full_name\":\"Test 2\",\"role\":null,\"joined_at\":\"2026-08-26T08:17:40\"},{\"id\":46,\"email\":\"",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "User không có quyền quản lý members",
+    "input": "Xoá không quyền",
+    "expected": "403/401",
+    "actual": "{\"statusCode\":401,\"message\":\"User not authorized to remove members from this event\",\"data\":null,\"error\":\"User not authorized to remove members from this event\",\"timestamp\":\"2026-08-26T15:17:40.370706\"",
+    "status": 401,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "Remove member",
+    "input": "Owner xoá u3",
+    "expected": "204",
+    "actual": "",
+    "status": 204,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Staff",
+    "case": "Remove member không tồn tại",
+    "input": "Xoá lại u3",
+    "expected": "400/404",
+    "actual": "{\"statusCode\":400,\"message\":\"User is not a member of this event\",\"data\":null,\"error\":\"User is not a member of this event\",\"timestamp\":\"2026-08-26T15:17:40.392075\",\"path\":\"/events/27/members/46\"}",
+    "status": 400,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Task",
+    "case": "Tạo task thành công",
+    "input": "Data đúng",
+    "expected": "201",
+    "actual": "{\"statusCode\":201,\"message\":\"Event task created successfully\",\"data\":{\"id\":17,\"event_id\":27,\"assignee_id\":44,\"title\":\"T1\",\"description\":\"D\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-01-0",
+    "status": 201,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Task",
+    "case": "Tạo task với dữ liệu không hợp lệ",
+    "input": "Thiếu field",
+    "expected": "422",
+    "actual": "{\"detail\":[{\"type\":\"missing\",\"loc\":[\"body\",\"title\"],\"msg\":\"Field required\",\"input\":{\"event_id\":\"27\"}},{\"type\":\"missing\",\"loc\":[\"body\",\"description\"],\"msg\":\"Field required\",\"input\":{\"event_id\":\"27\"}},{",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Task",
+    "case": "Lấy task",
+    "input": "GET task",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task found\",\"data\":{\"id\":18,\"event_id\":27,\"assignee_id\":44,\"title\":\"T1\",\"description\":\"D\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:00:00\",\"cr",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Task",
+    "case": "Task không tồn tại",
+    "input": "GET 99999",
+    "expected": "404",
+    "actual": "{\"statusCode\":404,\"message\":\"Event Task not found\",\"data\":null,\"error\":\"Event task not found\",\"timestamp\":\"2026-08-26T15:17:40.453639\",\"path\":\"/event-tasks/99999\"}",
+    "status": 404,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Task",
+    "case": "PATCH chỉ một field",
+    "input": "Chỉ gửi title",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":18,\"event_id\":27,\"assignee_id\":44,\"title\":\"New Title\",\"description\":\"D\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:0",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event Task",
+    "case": "Delete task",
+    "input": "Xoá task hợp lệ",
+    "expected": "200/204",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task deleted\",\"data\":{\"id\":18,\"event_id\":27,\"assignee_id\":44,\"title\":\"New Title\",\"description\":\"D\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:0",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Status - TODO",
+    "input": "Patch status",
+    "expected": "Validation error expected for some",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"status\"],\"msg\":\"Input should be 'pending', 'in_progress' or 'completed'\",\"input\":\"TODO\",\"ctx\":{\"expected\":\"'pending', 'in_progress' or 'completed'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Status - pending",
+    "input": "Patch status",
+    "expected": "Success expected for valid",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":19,\"event_id\":27,\"assignee_id\":44,\"title\":\"T2\",\"description\":\"D\",\"status\":\"pending\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:00:00\",\"",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Status - in_progress",
+    "input": "Patch status",
+    "expected": "Success expected for valid",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":19,\"event_id\":27,\"assignee_id\":44,\"title\":\"T2\",\"description\":\"D\",\"status\":\"in_progress\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:00:0",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Status - completed",
+    "input": "Patch status",
+    "expected": "Success expected for valid",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":19,\"event_id\":27,\"assignee_id\":44,\"title\":\"T2\",\"description\":\"D\",\"status\":\"completed\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:00:00\"",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Status - DONE",
+    "input": "Patch status",
+    "expected": "Validation error expected for some",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"status\"],\"msg\":\"Input should be 'pending', 'in_progress' or 'completed'\",\"input\":\"DONE\",\"ctx\":{\"expected\":\"'pending', 'in_progress' or 'completed'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Status - INVALID",
+    "input": "Patch status",
+    "expected": "Validation error expected for some",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"status\"],\"msg\":\"Input should be 'pending', 'in_progress' or 'completed'\",\"input\":\"INVALID\",\"ctx\":{\"expected\":\"'pending', 'in_progress' or 'completed'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Priority - LOW",
+    "input": "Patch priority",
+    "expected": "Validation error expected for some",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"priority\"],\"msg\":\"Input should be 'low', 'medium' or 'high'\",\"input\":\"LOW\",\"ctx\":{\"expected\":\"'low', 'medium' or 'high'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Priority - low",
+    "input": "Patch priority",
+    "expected": "Success expected for valid",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":19,\"event_id\":27,\"assignee_id\":44,\"title\":\"T2\",\"description\":\"D\",\"status\":\"completed\",\"priority\":\"low\",\"due_date\":\"2026-01-01T00:00:00\",\"c",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Priority - medium",
+    "input": "Patch priority",
+    "expected": "Success expected for valid",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":19,\"event_id\":27,\"assignee_id\":44,\"title\":\"T2\",\"description\":\"D\",\"status\":\"completed\",\"priority\":\"medium\",\"due_date\":\"2026-01-01T00:00:00\"",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Priority - high",
+    "input": "Patch priority",
+    "expected": "Success expected for valid",
+    "actual": "{\"statusCode\":200,\"message\":\"Event Task updated\",\"data\":{\"id\":19,\"event_id\":27,\"assignee_id\":44,\"title\":\"T2\",\"description\":\"D\",\"status\":\"completed\",\"priority\":\"high\",\"due_date\":\"2026-01-01T00:00:00\",\"",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Priority - URGENT",
+    "input": "Patch priority",
+    "expected": "Validation error expected for some",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"priority\"],\"msg\":\"Input should be 'low', 'medium' or 'high'\",\"input\":\"URGENT\",\"ctx\":{\"expected\":\"'low', 'medium' or 'high'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Status và Priority",
+    "case": "Priority - INVALID",
+    "input": "Patch priority",
+    "expected": "Validation error expected for some",
+    "actual": "{\"detail\":[{\"type\":\"enum\",\"loc\":[\"body\",\"priority\"],\"msg\":\"Input should be 'low', 'medium' or 'high'\",\"input\":\"INVALID\",\"ctx\":{\"expected\":\"'low', 'medium' or 'high'\"}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Pagination",
+    "case": "page=1, limit hợp lệ",
+    "input": "GET members",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Members retrieved successfully\",\"data\":[{\"id\":45,\"email\":\"test_4762a6e8@example.com\",\"full_name\":\"Test 2\",\"role\":null,\"joined_at\":\"2026-08-26T08:17:40\"}],\"error\":null,\"tim",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Pagination",
+    "case": "page=0",
+    "input": "GET members",
+    "expected": "422",
+    "actual": "{\"detail\":[{\"type\":\"greater_than_equal\",\"loc\":[\"query\",\"page\"],\"msg\":\"Input should be greater than or equal to 1\",\"input\":\"0\",\"ctx\":{\"ge\":1}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Pagination",
+    "case": "page âm",
+    "input": "GET members",
+    "expected": "422",
+    "actual": "{\"detail\":[{\"type\":\"greater_than_equal\",\"loc\":[\"query\",\"page\"],\"msg\":\"Input should be greater than or equal to 1\",\"input\":\"-1\",\"ctx\":{\"ge\":1}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Pagination",
+    "case": "limit=0",
+    "input": "GET members",
+    "expected": "422",
+    "actual": "{\"detail\":[{\"type\":\"greater_than_equal\",\"loc\":[\"query\",\"limit\"],\"msg\":\"Input should be greater than or equal to 1\",\"input\":\"0\",\"ctx\":{\"ge\":1}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Pagination",
+    "case": "limit âm",
+    "input": "GET members",
+    "expected": "422",
+    "actual": "{\"detail\":[{\"type\":\"greater_than_equal\",\"loc\":[\"query\",\"limit\"],\"msg\":\"Input should be greater than or equal to 1\",\"input\":\"-1\",\"ctx\":{\"ge\":1}}]}",
+    "status": 422,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Pagination",
+    "case": "page vượt quá số trang",
+    "input": "GET members",
+    "expected": "200",
+    "actual": "{\"statusCode\":200,\"message\":\"Members retrieved successfully\",\"data\":[],\"error\":null,\"timestamp\":\"2026-08-26T15:17:40.638789\",\"path\":\"/events/27/members\"}",
+    "status": 200,
+    "result": "PASS",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Delete event thành công",
+    "input": "Xoá event",
+    "expected": "204",
+    "actual": "Internal Server Error",
+    "status": 500,
+    "result": "FAIL",
+    "note": ""
+  },
+  {
+    "module": "Event",
+    "case": "Delete event không tồn tại",
+    "input": "Xoá event đã xoá",
+    "expected": "404",
+    "actual": "Internal Server Error",
+    "status": 500,
+    "result": "FAIL",
+    "note": ""
+  }
+]
