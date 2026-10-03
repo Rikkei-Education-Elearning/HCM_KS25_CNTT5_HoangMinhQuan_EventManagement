@@ -28,4 +28,3 @@ class EventUpdate(BaseModel):
     due_date: datetime | None = None
     status: str | None = None
 
-

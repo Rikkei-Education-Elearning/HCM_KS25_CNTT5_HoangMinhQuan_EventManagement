@@ -35,6 +35,17 @@ def create_new_event(owner, event: EventCreate, db: Session) -> Event:
     db.commit()
     db.refresh(new_event)
 
+    new_organizer_staff = EventStaff(
+        event_id=new_event.id,
+        user_id=owner.id,
+        role_id=2,
+        joined_at=datetime.datetime.now(datetime.timezone.utc),
+    )
+
+    db.add(new_organizer_staff)
+    db.commit()
+    db.refresh(new_organizer_staff)
+
     return new_event
 
 
@@ -154,12 +165,12 @@ def add_member_to_event(event_id: int, user_id: int, current_user, db: Session) 
 
     new_member_user = db.query(User).filter(User.id == user_id).first()
     if not new_member_user:
-        raise UserNotFoundError("User not found")
+        raise UserNotFoundError("User not found") 
 
     new_staff = EventStaff(
         event_id=event_id,
-        user_id=new_member_user.id,
-        role=new_member_user.role_id,
+        user_id=user_id,
+        role_id=4,  # Assuming 4 is the ID for the "member" role
         joined_at=datetime.datetime.now(datetime.timezone.utc),
     )
     db.add(new_staff)

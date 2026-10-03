@@ -34,7 +34,7 @@ def get_current_user_profile(current_user, db: Session) -> User:
 
 def get_users_list(
     current_user,
-    email: str,
+    email: str | None,
     is_active: bool | None,
     page: int,
     limit: int,
@@ -50,4 +50,4 @@ def get_users_list(
     if is_active is not None:
         query = query.filter(User.is_active == is_active)
 
-    return query.offset((page - 1) * limit).limit(limit).all()
+    return query.offset((page - 1) * limit).limit(limit).all()
